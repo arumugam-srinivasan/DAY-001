@@ -1,0 +1,46 @@
+# Difference between HTTP1.1 and HTTP2
+
+## Introduction
+
+When it comes to the world wide web, the underlying protocol that enables communication between clients and servers is known as Hypertext Transfer Protocol (HTTP). As the internet has evolved over the years, so has this protocol. In this article, we will explore the differences between HTTP1.1 and its successor, HTTP2, shedding light on the improvements and enhancements that have been made to make web browsing faster and more efficient.
+
+## HTTP1.1: The Basics
+
+HTTP1.1, the predecessor to HTTP2, has been the standard protocol used for web communications for many years. It revolutionized the way web pages are fetched, enabling the retrieval of separate resources like images and CSS files, allowing websites to load more quickly. However, as websites grew in complexity and became more resource-intensive, the limitations of HTTP1.1 started to become apparent.
+
+### Limitations of HTTP1.1
+
+* **Head-of-Line Blocking**: In HTTP1.1, only one resource can be requested and transmitted at a time, leading to a phenomenon called "head-of-line blocking." This means that if a request for a particular resource gets delayed, all subsequent requests are also held up, resulting in slower overall loading times.
+    * This limitation can be quite frustrating, especially on high-latency connections where delays can significantly impact the user experience.
+
+## The Birth of HTTP2
+
+To overcome the shortcomings of HTTP1.1 and meet the demands of modern web browsing, HTTP2 was introduced. Developed by the Internet Engineering Task Force (IETF), HTTP2 aims to provide a more efficient and faster protocol for transferring information over the internet.
+
+## Enhancements and Benefits of HTTP2
+
+HTTP2 introduces several key enhancements that set it apart from its predecessor:
+
+### Multiplexing
+
+HTTP2 features multiplexing, which allows multiple resources to be requested and transmitted simultaneously through a single connection. This eliminates head-of-line blocking, enabling web pages to load faster by resolving the issue of resource contention. With HTTP2, requests and responses can be prioritized, ensuring that critical resources are fetched first and optimizing the overall performance of the web page.
+
+### Server Push
+
+One of the most significant enhancements introduced in HTTP2 is server push. In HTTP1.1, the client had to request each resource individually, resulting in additional round trips between the client and server. With server push, the server can proactively send resources to the client without waiting for a request. This proactive approach eliminates the need for multiple round trips and reduces latency, resulting in a faster and more seamless browsing experience for users.
+
+### Binary Protocol
+
+Unlike its textual predecessor, HTTP2 uses a binary protocol, which provides more efficient and compact representation of data. This binary framing allows for better compression, reducing the overhead and delivering content more quickly. By eliminating the need for parsing lengthy text-based headers, HTTP2 further speeds up the communication between clients and servers.
+
+### Header Compression
+
+HTTP2 utilizes header compression techniques like HPACK to significantly reduce the overhead associated with headers. With HTTP1.1, headers are sent with every request and response, leading to unnecessary data transmission. By compressing headers in HTTP2, the amount of data transferred is minimized, resulting in improved network utilization and reduced latency.
+
+### Backward Compatibility
+
+Another advantage of HTTP2 is its seamless backward compatibility with HTTP1.1. Since HTTP2 is an evolution of the previous protocol, it maintains compatibility with existing infrastructure, allowing websites and applications to gradually adopt the new protocol without causing disruptions. This smooth transition path ensures that HTTP2 can be implemented without requiring immediate changes to the entire internet ecosystem.
+
+## Conclusion
+
+HTTP2 brings a wave of improvements to the web browsing experience by addressing the limitations of its predecessor, HTTP1.1. With features like multiplexing, server push, binary protocol, header compression, and backward compatibility, HTTP2 offers faster and more efficient communication between clients and servers. As more websites embrace this newer protocol, users can look forward to snappier and more responsive web experiences, ultimately enhancing their overall satisfaction on the world wide web.
