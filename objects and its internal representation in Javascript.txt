@@ -1,0 +1,37 @@
+# Objects and Its Internal Representation in JavaScript
+
+## Introduction
+
+Object-oriented programming is a fundamental concept in JavaScript that allows developers to create and manipulate complex data structures. In this article, we will explore the internal representation of objects in JavaScript and delve into the intricacies of their implementation.
+
+## Understanding Objects in JavaScript
+
+### Objects as Key-Value Pairs
+
+In JavaScript, objects are essentially collections of key-value pairs. Each key serves as an identifier for its corresponding value, allowing for efficient and flexible data organization. This key-value structure makes objects highly versatile and powerful in JavaScript programming.
+
+### Properties and Methods
+
+Within an object, each key-value pair consists of a property and its corresponding value. Properties can hold various types of data, including primitive values like strings and numbers, as well as other objects and functions. Additionally, objects can have methods, which are functions stored as values for specific properties. Methods can be invoked to perform actions or manipulate data within the object.
+
+### Object Creation
+
+JavaScript provides multiple ways to create objects. One commonly used approach is using object literals, where objects are defined with curly braces `{}` and properties are assigned using the `key: value` syntax. Another method involves utilizing the `new` keyword along with constructor functions to instantiate objects. Both approaches ultimately lead to the creation of objects with their internal representation intact.
+
+## Internal Representation of Objects
+
+### Memory Allocation
+
+When an object is created or instantiated, JavaScript allocates memory to store its internal representation. This includes space for properties, methods, and other necessary meta-data. The size of this memory allocation can vary depending on the complexity and size of the object.
+
+### References and Pointers
+
+In JavaScript, objects are handled through references rather than direct values. These references act as pointers to the actual location of the object's data in memory. It means that when objects are assigned or passed as arguments, only the reference is copied rather than the entire object itself. This makes objects lightweight and enables efficient memory management.
+
+### Prototype Chain
+
+JavaScript employs prototypal inheritance, where objects can inherit properties and methods from other objects. This inheritance is achieved through a mechanism called the prototype chain. When a property or method is accessed on an object, JavaScript first looks for it within the object itself. If not found, it traverses up the prototype chain, searching in the object's prototype until a match is found or the chain ends with no match.
+
+## Conclusion
+
+Understanding the internal representation of objects in JavaScript is crucial for developing efficient and maintainable code. By comprehending the key-value pair structure, how objects are created, and their memory allocation and referencing mechanisms, developers can harness the full potential of JavaScript's object-oriented capabilities. So go ahead, dive deep into the world of JavaScript objects, and unlock limitless possibilities in your web development journey.
